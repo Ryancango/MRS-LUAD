@@ -1,0 +1,28 @@
+source_script	release_script	role	status
+rawdata/预处理+PCA.R	scripts/01_discovery/01_geo_combat_pca_preprocessing.R	Preprocess five GEO discovery cohorts, remove batch effects with ComBat, and inspect PCA outliers.	copied
+wgcna分析/wgcna全基因.R	scripts/01_discovery/02_wgcna_module_detection.R	Run WGCNA on the batch-corrected GEO discovery matrix to identify tumour-associated modules.	copied
+intersection_mechine/DEG和module取交集.R	scripts/01_discovery/03_deg_wgcna_intersection.R	Intersect recurrent differentially expressed genes with the tumour-associated WGCNA module.	copied
+intersection_mechine/GOnewbee.R	scripts/01_discovery/04_go_enrichment_candidate_genes.R	GO enrichment used to annotate the candidate gene set and motivate the membrane-related signature terminology.	copied
+intersection_mechine/go气泡图三合一.R	scripts/01_discovery/05_go_bubble_plot.R	Publication-style GO bubble plot for BP/CC/MF terms.	copied
+intersection_mechine/mechine/outside_data/my_ML.Dev.Prog.Sig_modified_functions.R	R/ml_framework_modified_functions.R	Modified machine-learning framework functions used for the 117-model prognostic screen.	copied
+intersection_mechine/mechine/outside_data/mime1**.R	scripts/02_machine_learning/01_train_117_ml_models_seed5201314.R	Train and compare 117 machine-learning survival models using TCGA-LUAD, GSE31210 and GSE72094 splits.	copied
+intersection_mechine/mechine/outside_data/plot_cindex_validate_only.R	scripts/02_machine_learning/02_rank_models_by_validation_cindex.R	Rank models by validation-set C-index and draw the model-performance heatmap.	copied
+intersection_mechine/mechine/outside_data/验证集风险评分.R	scripts/02_machine_learning/03_validation_risk_score_plots.R	Generate validation risk-score distributions and survival status plots.	copied
+intersection_mechine/mechine/outside_data/KM曲线发表文章重做.R	scripts/02_machine_learning/04_km_roc_validation_panels.R	Generate Kaplan-Meier and time-dependent ROC panels for validation cohorts.	copied
+cox/tcgaluad10gene.R	scripts/02_machine_learning/05_tcga_luad_10gene_cox_summary.R	Summarize the 10-gene model in TCGA-LUAD.	copied
+scRNA/131907/seurat.R	scripts/03_single_cell/01_seurat_processing_gse131907.R	Process the GSE131907 single-cell data using the original annotation framework.	copied
+scRNA/131907/单细胞风险评分调整spock2和adh1b.R	scripts/03_single_cell/02_single_cell_mrs_score_and_groups.R	Calculate single-cell MRS scores using the final coefficient set and assign median-based risk groups.	copied
+scRNA/131907/scfea/scFEA.R	scripts/03_single_cell/03_scfea_flux_summary.R	Summarize scFEA-inferred metabolic flux modules across cell types and risk groups.	copied
+scRNA/131907/代谢流hallmark箱线图.R	scripts/03_single_cell/04_epithelial_metabolic_signature_scores.R	Compare epithelial-cell metabolic signatures between high- and low-MRS groups.	copied
+scRNA/131907/Pseudotime_Quantification/monocle2.R	scripts/03_single_cell/05_monocle2_pseudotime.R	Infer epithelial-cell pseudotime trajectories with Monocle2.	copied
+scRNA/131907/Pseudotime_Quantification/拟时序分析拟合曲线主图.R	scripts/03_single_cell/06_pseudotime_gene_smoothing.R	Fit and plot gene-expression trends along pseudotime.	copied
+scRNA/131907/CellChat_Analysis/cellchatplot1.R	scripts/03_single_cell/07_cellchat_overview_plots.R	Plot CellChat interaction-count and interaction-strength summaries.	copied
+scRNA/131907/CellChat_Analysis/cellchatplot_bubble.R	scripts/03_single_cell/08_cellchat_ligand_receptor_bubbles.R	Draw CellChat ligand-receptor bubble plots.	copied
+scRNA/131907/CellChat_Analysis/cellchat_circleplot.R	scripts/03_single_cell/09_cellchat_circle_plots.R	Draw CellChat circle plots for selected signalling pathways.	copied
+scRNA/131907/CellChat_Analysis/小提琴堆叠图.R	scripts/03_single_cell/10_cellchat_related_expression_violin.R	Plot expression of selected ligand-receptor genes across cell groups.	copied
+scRNA/131907/T细胞髓样细胞亚群.R	scripts/03_single_cell/11_tcell_myeloid_subtype_composition.R	Summarize T-cell and myeloid-cell subtype composition by sample-level epithelial-risk grouping.	copied
+scRNA/131907/T细胞耗竭细胞比例图.R	scripts/03_single_cell/12_tcell_exhaustion_composition.R	Quantify exhausted T-cell proportions across high- and low-risk samples.	copied
+scRNA/131907/TOX_final.R	scripts/03_single_cell/13_tox_exhaustion_marker_analysis.R	Analyze TOX and immune-checkpoint marker expression in CD8 T-cell subsets.	copied
+intersection_mechine/mechine/outside_data/xena/download.R	scripts/04_pancancer/01_download_and_merge_xena_pancancer.R	Download and merge TCGA Pan-Cancer expression and survival endpoints from UCSC Xena.	copied
+intersection_mechine/mechine/outside_data/xena/pancancerKMROC.R	scripts/04_pancancer/02_pancancer_survival_roc_analysis.R	Assess 10-gene panel prognostic associations across TCGA cancer types and endpoints.	copied
+intersection_mechine/mechine/outside_data/xena/泛癌分析气泡图.R	scripts/04_pancancer/03_pancancer_bubble_plot.R	Generate the pan-cancer survival-association bubble plot.	copied

@@ -1,0 +1,12 @@
+dataset	source	use_in_repository	notes
+TCGA-LUAD	GDC/TCGA	training, validation and LUAD prognostic analyses	RNA-seq and clinical survival data
+TCGA-LUSC	GDC/TCGA	external tumour-type validation	used in selected risk-score validation scripts
+GSE7670	NCBI GEO	discovery differential-expression/WGCNA input	one of five GEO discovery cohorts after probe-to-symbol summarisation
+GSE18842	NCBI GEO	discovery differential-expression/WGCNA input	one of five GEO discovery cohorts after probe-to-symbol summarisation
+GSE19804	NCBI GEO	discovery differential-expression/WGCNA input	one of five GEO discovery cohorts after probe-to-symbol summarisation
+GSE31547	NCBI GEO	discovery differential-expression/WGCNA input	one of five GEO discovery cohorts after probe-to-symbol summarisation
+GSE33532	NCBI GEO	discovery differential-expression/WGCNA input	one of five GEO discovery cohorts after probe-to-symbol summarisation
+GSE31210	NCBI GEO	machine-learning survival modelling and validation	LUAD microarray cohort
+GSE72094	NCBI GEO	machine-learning survival modelling and validation	LUAD microarray cohort
+GSE131907	NCBI GEO	single-cell analysis	11 tumour lung and 11 adjacent/distant normal lung tissues were used; original study annotations were retained
+TCGA Pan-Cancer/Xena	UCSC Xena	pan-cancer survival endpoint analysis	OS, DSS, DFI and PFI endpoints where available
