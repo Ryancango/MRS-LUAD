@@ -1,6 +1,6 @@
 # MRS-LUAD code release
 
-This repository contains the curated analysis code for the manuscript **"A membrane-related multi-omics signature links metabolic reprogramming to immune evasion in lung adenocarcinoma"**.
+This repository contains the curated analysis code for the manuscript **"A membrane-related multi-omics signature links metabolic reprogramming and immune evasion in lung adenocarcinoma"**.
 
 The release is intentionally compact. It preserves the scripts needed to audit and reproduce the main computational logic while excluding raw public datasets, large intermediate R objects, generated figures, manuscript files and exploratory one-off scripts.
 
